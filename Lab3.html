@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Code 201 - Lab01b</title>
+  <link href="style.css" rel="stylesheet" />
+  <style>
+      .wrapper { 
+                display: grid; 
+                grid-template-columns: repeat(3, 1fr); 
+                grid-auto-rows: 200px;
+                border-style: solid;
+                border-color: rgb(241, 250, 109);
+                border-width: 5px;
+                grid-template-rows: 100px 300px;                
+                grid-gap: 5px;
+               
+                }
+      .wrapper2 { 
+                display: grid; 
+                grid-template-columns: repeat(1, 1fr); 
+                grid-auto-rows: 200px;
+                border-style: solid;
+                border-color: rgb(19, 20, 5);
+                border-width: 5px;
+                grid-template-rows: auto;                
+                grid-gap: 5px;
+               
+                } 
+     #myname{
+                color:salmon;
+                text-align: center;
+              }
+
+      h1 {
+          color:rgb(199, 154, 5);
+          font-size: 5;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      p {
+        color:rgb(0, 0, 0);
+        font-size: 100%;
+      }
+      li{
+        color:rgb(12, 12, 114);
+      }
+      #about{
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start: 1;
+                grid-row-end: 1;
+                background-color: rgb(0, 4, 7);
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                text-align: center;               
+                
+                
+             }
+      
+      #first{
+                background-color: brown;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                
+                
+                margin: 10px,10px,10px,10px;
+                
+            }
+      #second{
+                background-color: rgb(202, 218, 159);
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                
+                
+                margin: 10px,10px,10px,10px;
+      }
+      #third{
+                background-color: rgb(55, 105, 5);
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                border-color:rgb(199, 154, 5);
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                
+                
+                margin: 10px,10px,10px,10px;
+      }
+      #responses{
+                background-color: rgb(184, 36, 159);
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+                
+      }
+      
+         
+  </style>
+</head>
+<body>
+  <main>
+      <div class = "wrapper">
+        <section id = "about">
+            <h1 id="myname">Dwayne Hall</h1>            
+        </section>
+        <section id = "first">
+            <h1>Learning About You</h1>
+            <p>This is just pretty much getting some basic information from you.</p>
+                    <ul>
+                        <li>Asking you four questions</li>
+                        <li>Outputting your responses</li>
+                    </ul>
+            <!--<script src="01b.js"></script>-->
+        </section>
+        <section id = "second">
+            
+            <h1>Learning About Me</h1>
+            <p>I am going to get some information from you , to see if you really know me.</p>
+                <ul>
+                    <li id = "from">Where am i from?</li>                    
+                    <li id = "age">How old do you think i am?</li>
+                    <li id = "work">Where do i work?</li>
+                    <li id = "parish">Which Parish am i in?</li>
+                    <!--<li id = "riddle">I am an odd number, take one number from me and i become even, what am i?</li>
+                    -->
+                </ul>
+                </br>
+                <!--<script src="Lab2.js"></script>-->
+        </section>
+        <section id = "third">
+            
+            <h1>Learning About Me</h1>
+            <p>Just a young dude on his journey to becoming a better web developer. I am from St Catherine and i am now living in Saint James.
+                I am 29 Years old. I Work at Island Routes and i have been there for the past 4 years.
+            </p>
+                
+            
+        </section>
+        
+
+    </div>
+
+    <div class="wrapper2">
+            <section id = "responses">
+                    
+                <h1>Responses About me</h1>
+
+
+                <script src="Lab3.js"></script>
+                <h2>Top Ten Series</h2>
+                <ol>
+                    <li>Prison Break</li>
+                    <li>The Last Ship</li>
+                    <li>See</li>
+                    <li>Avatar: The Last Airbender</li>
+                    <li>Fresh Prince</li>
+                    <li>The Suite Life</li>
+                    <li>Dragon Ball Z</li>
+                    <li>Everybody Hates Chris</li>
+                    <li>Family Guy</li>
+                    <li>Vikings</li>
+                </ol>
+                    
+                
+            </section>
+    </div>
+  </main>
+  <header></header>
+  <footer></footer>
+</body>
+</html>
