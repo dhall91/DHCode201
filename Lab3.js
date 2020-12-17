@@ -5,11 +5,10 @@ document.write('</br>'+"Your name is "+yourName+".");
 
 
 var overAll=1;
-
 var myTally=1;
 
-
-var whereFrom = prompt("Where do you think i am from "+yourName+"?");
+function whereFrm(){
+    var whereFrom = prompt("Where do you think i am from "+yourName+"?");
 switch (whereFrom.toLowerCase())
     {
         case "saint catherine":
@@ -34,8 +33,13 @@ switch (whereFrom.toLowerCase())
     }
 document.write('</br>'+"You think i am from "+whereFrom+".");
 
+}
+function whereFrm();
 
 
+
+
+function howOld(){
 var myAge = prompt("How old do you think i am "+yourName+"?");
 myAge = parseInt(myAge);
 switch (true)
@@ -78,6 +82,15 @@ switch (true)
     }
     document.write('</br>'+"You think i am " +myAge+ ", oh ok");
 
+}
+function howOld();
+
+
+
+
+
+
+function placeOfWork(){
 var whereWork = prompt("Where do i work "+yourName+"?");
 if (whereWork.toLowerCase()=="island routes" || whereWork.toLowerCase()== "islandroutes")
 {
@@ -104,44 +117,12 @@ if (whichParish.toLowerCase() == "saint james") {
     myTally++;
 }
 
-
-
-// var guessMe = prompt(" Hey, Guess a number between 1 and 10");
-
-
-// var guessMe = prompt(" Hey, Guess a number between 1 and 10");
-// for(var i=0;i<4;i++){
-    
-//     if (guessMe <= 0 || guessMe > 10) {
-
-//     alert(" You really dont like to follow instructions");
-//     var guessMe2 = prompt(" Guess again between 1 and 10");
-//             if (guessMe2 <= 5){
-//                 alert("Thats kinda low");
-//             }else if(guessMe2 > 7){
-//                 alert("That's kinda high still");
-
-//             }else{
-//                 alert("You are correct");
-//          break;
-//             }
-// } else {
-//     if(guessMe <= 5){
-//         alert("Thats kinda low");
-//     }else if (guessMe > 7){
-
-//         alert("That's kinda high still");
-//     }else{
-//         alert("Spot on Mate");
-//          break;
-//     }
-// }
+}
+function placeOfWork();
 
 
 
-
-// }
-
+function guessOne(){
 var guessMe = prompt(" Hey, Guess a number between 1 and 10");
 for(var i=0;i<4;i++){
     if(guessMe<=5){
@@ -160,10 +141,11 @@ for(var i=0;i<4;i++){
 }
 document.write('</br>'+"the correct answer is 7 ");
 document.write('</br>'+ "Your response was "+guessMe);
+}
+function guessOne();
 
 
-
-
+function guessTwo(){
 var correctGuesses = ['Me','Myself','I','You','We','Them'];
 var answer = prompt('What are three ways you call yourself when you hit your chest?');
 for (var i = 0; i<6; i++) {
@@ -182,6 +164,12 @@ for (var i = 0; i<6; i++) {
   
 }
 document.write(" You scored "+overAll+" out of a possible 7");
+}
+function guessTwo()
+
+function additonalInfo(){
 var calCal = overAll/7;
 var mypercentage = calCal*100;
 document.write(" Your percentage is "+mypercentage);
+}
+function additonalInfo();
