@@ -34,7 +34,7 @@ switch (whereFrom.toLowerCase())
 document.write('</br>'+"You think i am from "+whereFrom+".");
 
 }
-function whereFrm();
+whereFrm();
 
 
 
@@ -65,7 +65,7 @@ switch (true)
             myTally++;
             break;
         case (myAge==28):
-            document.write('</br>'+'</br>'+"That was 1 years ago)");
+            document.write('</br>'+'</br>'+"That was 1 years ago");
             console.log("This works up to here input was "+myAge);
             myTally++;
             break;
@@ -83,7 +83,7 @@ switch (true)
     document.write('</br>'+"You think i am " +myAge+ ", oh ok");
 
 }
-function howOld();
+howOld();
 
 
 
@@ -118,7 +118,7 @@ if (whichParish.toLowerCase() == "saint james") {
 }
 
 }
-function placeOfWork();
+placeOfWork();
 
 
 
@@ -142,7 +142,7 @@ for(var i=0;i<4;i++){
 document.write('</br>'+"the correct answer is 7 ");
 document.write('</br>'+ "Your response was "+guessMe);
 }
-function guessOne();
+guessOne();
 
 
 function guessTwo(){
@@ -165,11 +165,11 @@ for (var i = 0; i<6; i++) {
 }
 document.write(" You scored "+overAll+" out of a possible 7");
 }
-function guessTwo()
+guessTwo()
 
 function additonalInfo(){
 var calCal = overAll/7;
 var mypercentage = calCal*100;
 document.write(" Your percentage is "+mypercentage);
 }
-function additonalInfo();
+additonalInfo();
